@@ -5,6 +5,9 @@
 
 body {
     background-color: black;
+    background-image: url(background_photos/stars_background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow-y: hidden;
 }
 
@@ -72,6 +75,8 @@ body {
     0% {transform:translate(-200px, -200px);}
     100% {transform:translate(900px, 600px);}
 }
+
+
 
 .planet {
     background-image: url(GIFs/blue_planet.gif);
