@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow-y: hidden;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100vw;
+    top: 0;
+    text-align: right;
+    position: fixed;
+    margin-bottom: 30px;
+}
+
+#title {
+    float: left;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 30vh;
+    text-decoration: none;
+    font-size: 3.5vh;
+    font-family: serif;
+    font-weight: 2vw;
+    color: white;
+}
+
+#tabs {
+    float: right;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-decoration: none;
+    font-size: 3.5vh;
+    font-family: serif;
+    font-weight: 2vw;
+
+    position: absolute;
+    right: 25vh;
+}
+
+#tabs a {
+    margin-right: 2vw;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.content {
+    position: relative;
+    top: 50px;
+    margin-left: 5vw;
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+    font-family: cursive;
+}
+
+.galaxy {
+    background-image: url(GIFs/galaxy.gif);
+    width: 219px;
+    height: 225px;
+    transform: translate(-50px, -50px);
+    animation: galaxy 60s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes galaxy {
+    0% {transform:translate(-200px, -200px);}
+    100% {transform:translate(900px, 600px);}
+}
+
+.planet {
+    background-image: url(GIFs/blue_planet.gif);
+    width: 600px;
+    height: 600px;
+    position: relative;
+    bottom: 50vh;
+    transform: scale(-1);
+    animation: blue_planet 30s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes blue_planet {
+    0% {transform:scale(-1);}
+    50% {transform:scale(0.5);}
+    100% {transform: scale(-1);}
+}
+
+.earth {
+    background-image: url(GIFs/earth.gif);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 550px;
+    left: 950px;
+    transform: skew(15deg, 15deg);
+    animation: earth 6s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes earth {
+    0% {transform:skew(10deg, 25deg);}
+    50% {transform:skew(25deg, 50deg);}
+    100% {transform:skew(5deg, 25deg);}
+}
+
+.grey_earth {
+    background-image: url(GIFs/grey_earth.gif);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 700px;
+    left: 500px;
+    transform: rotate(180deg);
+    animation: grey_earth 4s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes grey_earth {
+    0% {transform:rotate(180deg);}
+    50% {transform:rotate(90deg);}
+    100% {transform:rotate(180deg);}
+}
